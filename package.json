@@ -1,8 +1,11 @@
 {
-  "name": "my-app",
+  "homepage": "http://annardrgs.github.io/Globo-Project",
+  "name": "anna-globo-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -20,5 +23,8 @@
     "react-router-dom": "^6.22.1",
     "styled-components": "^6.0.7",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
